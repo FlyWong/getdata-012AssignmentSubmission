@@ -2,7 +2,7 @@ This file describes the files in this assignment submission.
 
 4 files were submitted for this assignment. 
 
-The clean data, in "tinyDataAsg.txt", was uploaded as attachment in the course assignment page.
+The clean data, in "tidyData.txt", was uploaded as attachment in the course assignment page.
 
 The remaining 3 files, README.md, CodeBook.md and run_analysis.R were uploaded to this Github repository.
 
