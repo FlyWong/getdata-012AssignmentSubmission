@@ -5,9 +5,8 @@ library(reshape2)
 # common activity labels and features lists to be reuse for test and train dataset
 
 df_activity_label <- read.table("activity_labels.txt")
-str(df_activity_label)
+
 df_activity_relabel <- rename(df_activity_label, Activity_ID = V1, Activity_Desc=V2) #rename columns to a more descriptive name and to facilitate merge
-str(df_activity_relabel)
 
 df_reading_labels <- read.table("features.txt")
 
