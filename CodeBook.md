@@ -1,10 +1,8 @@
-Code Book
+This Code Book describes the raw data, the variables and the transformations (using run_analysis.R) performed to obtain the required tidy data set.
 
-This Code Book describes the  raw data, its variables and transformations (using run_analysis.R) performed to obtain the required tidy data set.
+1) Data (raw data)
 
-1. Data (raw data)
-
-1.1 Data Source
+1.1) Data Source
 
 The raw data was obtained from the "Human Activity Recognition Using Smartphones Data Set". Details of the experiment which produced the data can be found at:
 
@@ -14,7 +12,7 @@ The raw data was downloaded from:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-1.2 Raw Data Files
+1.2) Raw Data Files
 
 Unzip the downloaded zip file and under the .\getdata-projectfiles-UCI HAR Dataset\UCI HAR Dataset folder, data was divided into train and test data sets in the train and test folders respectively.
 
@@ -42,36 +40,36 @@ d) \train\subject_train.txt, \test\subject_test.txt
 
 Contains single column recording code of the subject performing activity when observation was made.
  
-1.3 Exclusion
+1.3) Exclusion
 
 Data files in the Inertial Signals folders are not required for this purpose and thus ignored.
 
-2 Variables (in tidy data set)
+2) Variables (in tidy data set)
 
 The independent tidy data set created for the purpose of this assignment contains the average of each mean and standard deviation variable, for each activity and each subject. This data set is extracted from the merged test and train data sets and labelled with descriptive activity and variable names.
 
 See features_info.txt for details on how the variables are derived from the experiment.
 
-2.1 Descriptive (variable) names
+2.1) Descriptive (variable) names
 
 As there is no consensus on what constitute descriptive variable names (eg. spelling in full will increase length of name and decrease readability, use underscore or camel case) and there is no naming convention defined in this assignment, the original variable names provided in features.txt will be retained.
 
 On similar note, descriptive activity names in activity_labels.txt will also be retained
 
-2.3 Mean and standard deviation variables
+2.2) Mean and standard deviation variables
 
 The data extraction process assumes only variables with names containing 'mean()' and 'std()' are variables of interest. Variables such as 'fBodyAcc-meanFreq()-X', 'angle(tBodyAccMean,gravity)' are left out. 
 
 The difference in naming implies the source of data might defer (eg. mean that is computed from raw signal vs mean output directly from electronic component without raw signal, thus standard deviation cannot be computed). Thus, to maintain the consistency of data, only variables with names containing 'mean()' and 'std()' are included in the tidy data set.
 
-3. Data Transformation
+3) Data Transformation
 
-3.1 Preparation
+3.1) Preparation
 
 All required data files (eg. activity_labels.txt, features.txt, subject_test.txt, y_test.txt, X_test.txt, subject_train.txt, y_train.txt, X_train.txt ) are placed in the working directory.
 
 
-3.2 Transformation Steps
+3.2) Transformation Steps
 
 The following steps are performed in run_analysis.R. The script also requires dplyr and reshape2 R libraries.
 

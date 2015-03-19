@@ -1,12 +1,12 @@
-This file describes this assignment submission.
+This file describes the files involved in this assignment submission.
 
-1. Objective
+1) Objective
 
 The purpose of this assignment is to extract a tidy data set which contains the average of each mean and standard deviation measurements(variables), for each activity and each subject from the "Human Activity Recognition Using Smartphones Data Set".
 
 More details about the raw data and transformation can be found in CodeBook.md.
 
-2. Files submitted
+2) Files submitted
 
 4 files were submitted for this assignment. 
 
