@@ -1,4 +1,3 @@
-setwd("C:/Users/raymond/Documents/IDA MOOC/coursera/3GettingandCleaningData/assignment/wd")
 
 library(dplyr)
 library(reshape2)
@@ -60,8 +59,6 @@ df_full_train <- cbind(df_train_F_activity_subject,df_train_X_readings )
 
 df_full <- rbind(df_full_train,df_full_test)
 
-str(df_full)
-
 #created logical vector of required mean and std measurement columns index
 v_required_col_index <- which(grepl("mean\\(\\)", names(df_full))|grepl("std\\(\\)", names(df_full)))
 
@@ -73,4 +70,4 @@ df_melt <- melt(df_sub_mean_std, id = c("Subject_ID", "Activity_Desc")) # melt d
 
 df_data<-dcast(df_melt, Subject_ID + Activity_Desc ~ variable, mean) # dcast data to required form
 
-write.table(df_data,file="tinyDataAsg.txt",row.name=FALSE)
+write.table(df_data,file="tidyData.txt",row.name=FALSE)
