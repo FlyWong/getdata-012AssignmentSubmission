@@ -52,7 +52,7 @@ See features_info.txt for details on how the variables are derived from the expe
 
 2.1) Descriptive (variable) names
 
-As there is no consensus on what constitute descriptive variable names (eg. spelling in full will increase length of name and decrease readability, use underscore or camel case) and there is no naming convention defined in this assignment, the original variable names provided in features.txt will be retained.
+As there is no consensus on what constitute descriptive variable names (eg. spelling in full will increase length of name and decrease readability, use underscore or camel case) and there is no naming convention defined in this assignment, the original descriptive variable names provided in features.txt will be retained.
 
 On similar note, descriptive activity names in activity_labels.txt will also be retained
 
