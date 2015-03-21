@@ -52,7 +52,13 @@ See features_info.txt for details on how the variables are derived from the expe
 
 2.1) Descriptive (variable) names
 
-As there is no consensus on what constitute descriptive variable names (eg. spelling in full will increase length of name and decrease readability, use underscore or camel case) and there is no naming convention defined in this assignment, the original descriptive variable names provided in features.txt will be retained.
+There is no consensus on what constitute descriptive variable names (see course project forum: https://class.coursera.org/getdata-012/forum/thread?thread_id=86) and there is no naming convention defined in this assignment, the original descriptive variable names provided in features.txt will be retained given the following consideration:
+
+i) to me, a fully spelled out column name eg. "mean time based body acceleration in X direction" is not more descriptive than "tBodyAcc-mean()-X". This is not a set of simple data where layman can understand the variables use by reading the column names directly (eg. Diagnosis vs Dx). Reader will need to go through features_info.txt to appreciate how the variables are obtained and in doing so, will understanding the short form descriptive variable names provided. 
+
+ii) Long column name will increase typing effort and reduce readability.
+
+iii) Often, we may need to perform validation by checking back on raw data. If column names are consistent, it will make cross reference easier.
 
 On similar note, descriptive activity names in activity_labels.txt will also be retained
 
