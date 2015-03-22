@@ -72,7 +72,7 @@ The difference in naming implies the source of data might defer (eg. mean that i
 
 3.1) Preparation
 
-All required data files (eg. activity_labels.txt, features.txt, subject_test.txt, y_test.txt, X_test.txt, subject_train.txt, y_train.txt, X_train.txt ) are placed in the working directory.
+All required data files (eg. activity_labels.txt, features.txt, subject_test.txt, y_test.txt, X_test.txt, subject_train.txt, y_train.txt, X_train.txt ) are placed flatly in the working directory.
 
 
 3.2) Transformation Steps

@@ -18,4 +18,4 @@ https://github.com/FlyWong/getdata-012AssignmentSubmission
 
 CodeBook.md describes the raw data, the variables and outlined the transformations performed to clean up the raw data into the required form.
 
-run_analysis.R is the R script used to perform the transformation. The script assumes all required data files are in the working directory and output the tidy data file, 'tidyData.txt' into the working directory. The script requires dplyr and reshape2 libraries.
+run_analysis.R is the R script used to perform the transformation. The script assumes all required data files are flatly placed in the working directory and output the tidy data file, 'tidyData.txt', into the working directory. The script requires dplyr and reshape2 libraries.

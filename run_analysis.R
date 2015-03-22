@@ -1,3 +1,7 @@
+# Prerequisite: all required data files reside in working directory 
+# and can be accessed directly by specifying the file names.  
+#
+
 
 library(dplyr)
 library(reshape2)
